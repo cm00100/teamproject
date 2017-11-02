@@ -36,7 +36,7 @@ function displayCandy() {
             
             
         </script>
-        
+        <meta charset="utf-8"/>
     </head>
     
     <body>
