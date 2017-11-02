@@ -17,12 +17,15 @@ function displayCandy() {
     return $candies;
 }
 
+
 ?>
 
 <!DOCTYPE html>
 <html>
     
     <head>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
         
         <title> Candy Shop </title>
         
@@ -30,7 +33,7 @@ function displayCandy() {
             
             function confirmCheckout(candyName) {
                 
-                return confirm("Are you sure you want to checkout " + candyName + "?");
+                return confirm("Are you sure you want to checkout" + candyName + "?");
                 
             }
             
@@ -70,6 +73,7 @@ function displayCandy() {
         foreach($candies as $candy) {
             echo $candy['candyName'];
             echo "<a href='candyInfo.php?candyId=".$candy['candyId']."'> [info] </a> ";
+
             echo "<form action='checkout.php' style='display:inline' onsubmit='return confirmCheckout(\"".$user['candyName']."\")'>
                      <input type='hidden' name='userId' value='".$user['userId']."' />
                      <input type='submit' value='Checkout'>
