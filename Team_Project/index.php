@@ -1,13 +1,16 @@
 <?php
+
 session_start();
 
 include 'dbConnection.php';
+
 $conn = getDatabaseConnection();
 
 function displayCandy() {
     global $conn;
     $sql = "SELECT * 
-            FROM candy";
+            FROM candy
+            ORDER BY candyName ASC";
     $statement = $conn->prepare($sql);
     $statement->execute();
     $candies = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -15,14 +18,17 @@ function displayCandy() {
 }
 
 ?>
+
 <!DOCTYPE html>
 <html>
+    
     <head>
+        
         <title> Candy Shop </title>
+        
         <script>
             
             function confirmCheckout(candyName) {
-                
                 
                 return confirm("Are you sure you want to checkout " + candyName + "?");
                 
@@ -30,7 +36,9 @@ function displayCandy() {
             
             
         </script>
+        
     </head>
+    
     <body>
 
         <h1> Candy Shop </h1>
@@ -73,5 +81,6 @@ function displayCandy() {
         
         ?>
         
-    </body>     
+    </body>   
+    
 </html>
