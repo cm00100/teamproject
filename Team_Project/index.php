@@ -35,18 +35,22 @@ function displayCandy() {
         
         <script>
             
-            function confirmCheckout(candyName) {
+            function confirmAddToCart(candyName) {
                 
-                return confirm("Are you sure you want to checkout" + candyName + "?");
+                return confirm("Are you sure you want to add " + candyName + " to shopping cart?");
                 
             }
-            
-            
         </script>
+        
         <meta charset="utf-8"/>
     </head>
     
     <body>
+    
+    
+       <p> <a href="shoppingcart.php">View Shopping Cart</a></p>
+
+
 
         <h1> Candy Shop </h1>
         
@@ -77,16 +81,21 @@ function displayCandy() {
         foreach($candies as $candy) {
             echo $candy['candyName'];
             echo "<a href='candyInfo.php?candyId=".$candy['candyId']."'> [info] </a> ";
+            
 
-            echo "<form action='checkout.php' style='display:inline' onsubmit='return confirmCheckout(\"".$user['candyName']."\")'>
-                     <input type='hidden' name='userId' value='".$user['userId']."' />
-                     <input type='submit' value='Checkout'>
+            
+            
+            
+            echo "<form action='addtocart.php' style='display:inline' onsubmit='return confirmAddToCart(\"".$candy['candyName']."\")'>
+                     <input type='hidden' name='candyId' value='".$candy['candyId']."' />
+                     <input type='submit' value='Add To Cart'>
                   </form>";
             
             echo "<br />";
             
-        }
         
+        
+        }
         ?>
         </div> 
     </body>   
