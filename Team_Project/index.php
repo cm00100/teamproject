@@ -47,9 +47,6 @@ function displayCandy() {
     
     <body>
     
-    
-       <p> <a href="shoppingcart.php">View Shopping Cart</a></p>
-
 
 
         <h1> Candy Shop </h1>
@@ -74,6 +71,9 @@ function displayCandy() {
         
         <br /><br />
         
+        <p> <a href="shoppingcart.php">View Shopping Cart</a></p>
+
+        
         <?php
         
         $candies = displayCandy();
@@ -83,9 +83,6 @@ function displayCandy() {
             echo "<a href='candyInfo.php?candyId=".$candy['candyId']."'> [info] </a> ";
             
 
-            
-            
-            
             echo "<form action='addtocart.php' style='display:inline' onsubmit='return confirmAddToCart(\"".$candy['candyName']."\")'>
                      <input type='hidden' name='candyId' value='".$candy['candyId']."' />
                      <input type='submit' value='Add To Cart'>
