@@ -51,3 +51,250 @@ Stack trace:
 #1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(101): getAllergyName()
 #2 {main}
   thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 48
+[06-Nov-2017 07:28:00 UTC] PHP Warning:  Illegal string offset 'brandName' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 33
+[06-Nov-2017 07:28:00 UTC] PHP Stack trace:
+[06-Nov-2017 07:28:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 07:28:00 UTC] PHP   2. getCandyNames() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:92
+[06-Nov-2017 07:28:00 UTC] PHP Warning:  Illegal string offset 'brandName' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 33
+[06-Nov-2017 07:28:00 UTC] PHP Stack trace:
+[06-Nov-2017 07:28:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 07:28:00 UTC] PHP   2. getCandyNames() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:92
+[06-Nov-2017 07:28:22 UTC] PHP Warning:  Illegal string offset 'brandName' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 33
+[06-Nov-2017 07:28:22 UTC] PHP Stack trace:
+[06-Nov-2017 07:28:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 07:28:22 UTC] PHP   2. getCandyNames() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:92
+[06-Nov-2017 07:28:22 UTC] PHP Warning:  Illegal string offset 'brandName' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 33
+[06-Nov-2017 07:28:22 UTC] PHP Stack trace:
+[06-Nov-2017 07:28:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 07:28:22 UTC] PHP   2. getCandyNames() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:92
+[06-Nov-2017 07:29:09 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 34
+[06-Nov-2017 07:29:09 UTC] PHP Stack trace:
+[06-Nov-2017 07:29:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 07:29:09 UTC] PHP   2. getCandyNames() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:93
+[06-Nov-2017 07:29:09 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 34
+[06-Nov-2017 07:29:09 UTC] PHP Stack trace:
+[06-Nov-2017 07:29:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 07:29:09 UTC] PHP   2. getCandyNames() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:93
+[06-Nov-2017 07:29:10 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 34
+[06-Nov-2017 07:29:10 UTC] PHP Stack trace:
+[06-Nov-2017 07:29:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 07:29:10 UTC] PHP   2. getCandyNames() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:93
+[06-Nov-2017 07:29:10 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 34
+[06-Nov-2017 07:29:10 UTC] PHP Stack trace:
+[06-Nov-2017 07:29:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 07:29:10 UTC] PHP   2. getCandyNames() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:93
+[06-Nov-2017 07:30:55 UTC] PHP Warning:  Illegal string offset 'brandName' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 103
+[06-Nov-2017 07:30:55 UTC] PHP Stack trace:
+[06-Nov-2017 07:30:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 07:31:11 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 103
+[06-Nov-2017 07:31:11 UTC] PHP Stack trace:
+[06-Nov-2017 07:31:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 07:33:37 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:30
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(30): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(94): getCandyNames()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 30
+[06-Nov-2017 07:33:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'brandId' in where clause is ambiguous' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:30
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(30): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(94): getCandyNames()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 30
+[06-Nov-2017 07:35:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:30
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(30): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(94): getCandyNames()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 30
+[06-Nov-2017 07:35:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(29): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(93): getCandyNames()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 29
+[06-Nov-2017 07:35:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(29): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(93): getCandyNames()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 29
+[06-Nov-2017 07:36:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:30
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(30): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(94): getCandyNames()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 30
+[06-Nov-2017 07:36:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:30
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(30): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(94): getCandyNames()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 30
+[06-Nov-2017 07:36:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:30
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(30): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(94): getCandyNames()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 30
+[06-Nov-2017 07:36:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:30
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(30): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(94): getCandyNames()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 30
+[06-Nov-2017 07:37:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:30
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(30): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(94): getCandyNames()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 30
+[06-Nov-2017 07:39:43 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 35
+[06-Nov-2017 07:39:43 UTC] PHP Stack trace:
+[06-Nov-2017 07:39:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 07:39:43 UTC] PHP   2. getCandyNames() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:99
+[06-Nov-2017 07:44:19 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 35
+[06-Nov-2017 07:44:19 UTC] PHP Stack trace:
+[06-Nov-2017 07:44:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 07:44:19 UTC] PHP   2. getCandyNames() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:99
+[06-Nov-2017 07:44:37 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 109
+[06-Nov-2017 07:44:37 UTC] PHP Stack trace:
+[06-Nov-2017 07:44:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 07:44:38 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 109
+[06-Nov-2017 07:44:38 UTC] PHP Stack trace:
+[06-Nov-2017 07:44:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:11:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(15): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(91): displayCandy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 15
+[06-Nov-2017 08:14:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(15): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(91): displayCandy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 15
+[06-Nov-2017 08:15:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(15): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(91): displayCandy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 15
+[06-Nov-2017 08:15:44 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 106
+[06-Nov-2017 08:15:44 UTC] PHP Stack trace:
+[06-Nov-2017 08:15:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:15:44 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 106
+[06-Nov-2017 08:15:44 UTC] PHP Stack trace:
+[06-Nov-2017 08:15:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:16:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(15): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(91): displayCandy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 15
+[06-Nov-2017 08:16:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(15): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(91): displayCandy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 15
+[06-Nov-2017 08:16:58 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(15): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(91): displayCandy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 15
+[06-Nov-2017 08:21:21 UTC] PHP Warning:  Missing argument 1 for displayCandy(), called in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 98 and defined in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 9
+[06-Nov-2017 08:21:21 UTC] PHP Stack trace:
+[06-Nov-2017 08:21:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:21:21 UTC] PHP   2. displayCandy() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:98
+[06-Nov-2017 08:21:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(17): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(98): displayCandy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 17
+[06-Nov-2017 08:21:22 UTC] PHP Warning:  Missing argument 1 for displayCandy(), called in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 98 and defined in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 9
+[06-Nov-2017 08:21:22 UTC] PHP Stack trace:
+[06-Nov-2017 08:21:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:21:22 UTC] PHP   2. displayCandy() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:98
+[06-Nov-2017 08:21:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(17): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(98): displayCandy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 17
+[06-Nov-2017 08:22:22 UTC] PHP Warning:  Missing argument 1 for displayCandy(), called in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 98 and defined in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 9
+[06-Nov-2017 08:22:22 UTC] PHP Stack trace:
+[06-Nov-2017 08:22:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:22:22 UTC] PHP   2. displayCandy() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:98
+[06-Nov-2017 08:22:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(17): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(98): displayCandy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 17
+[06-Nov-2017 08:26:08 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 113
+[06-Nov-2017 08:26:08 UTC] PHP Stack trace:
+[06-Nov-2017 08:26:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:26:08 UTC] PHP Warning:  Illegal string offset 'brandName' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 115
+[06-Nov-2017 08:26:08 UTC] PHP Stack trace:
+[06-Nov-2017 08:26:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:26:08 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 113
+[06-Nov-2017 08:26:08 UTC] PHP Stack trace:
+[06-Nov-2017 08:26:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:27:31 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 113
+[06-Nov-2017 08:27:31 UTC] PHP Stack trace:
+[06-Nov-2017 08:27:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:27:31 UTC] PHP Warning:  Illegal string offset 'brandName' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 115
+[06-Nov-2017 08:27:31 UTC] PHP Stack trace:
+[06-Nov-2017 08:27:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:27:31 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 113
+[06-Nov-2017 08:27:31 UTC] PHP Stack trace:
+[06-Nov-2017 08:27:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:27:39 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 113
+[06-Nov-2017 08:27:39 UTC] PHP Stack trace:
+[06-Nov-2017 08:27:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:27:39 UTC] PHP Warning:  Illegal string offset 'brandName' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 115
+[06-Nov-2017 08:27:39 UTC] PHP Stack trace:
+[06-Nov-2017 08:27:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:27:39 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 113
+[06-Nov-2017 08:27:39 UTC] PHP Stack trace:
+[06-Nov-2017 08:27:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:29:05 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 113
+[06-Nov-2017 08:29:05 UTC] PHP Stack trace:
+[06-Nov-2017 08:29:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:29:05 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 113
+[06-Nov-2017 08:29:05 UTC] PHP Stack trace:
+[06-Nov-2017 08:29:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:29:19 UTC] PHP Warning:  Illegal string offset 'candyId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 113
+[06-Nov-2017 08:29:19 UTC] PHP Stack trace:
+[06-Nov-2017 08:29:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:29:19 UTC] PHP Warning:  Illegal string offset 'candyId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 113
+[06-Nov-2017 08:29:19 UTC] PHP Stack trace:
+[06-Nov-2017 08:29:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:29:20 UTC] PHP Warning:  Illegal string offset 'candyId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 113
+[06-Nov-2017 08:29:20 UTC] PHP Stack trace:
+[06-Nov-2017 08:29:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:29:20 UTC] PHP Warning:  Illegal string offset 'candyId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 113
+[06-Nov-2017 08:29:20 UTC] PHP Stack trace:
+[06-Nov-2017 08:29:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:29:42 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 113
+[06-Nov-2017 08:29:42 UTC] PHP Stack trace:
+[06-Nov-2017 08:29:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:29:42 UTC] PHP Warning:  Illegal string offset 'brandName' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 115
+[06-Nov-2017 08:29:42 UTC] PHP Stack trace:
+[06-Nov-2017 08:29:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:29:42 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 113
+[06-Nov-2017 08:29:42 UTC] PHP Stack trace:
+[06-Nov-2017 08:29:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:30:42 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 115
+[06-Nov-2017 08:30:42 UTC] PHP Stack trace:
+[06-Nov-2017 08:30:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:30:42 UTC] PHP Warning:  Illegal string offset 'brandName' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 117
+[06-Nov-2017 08:30:42 UTC] PHP Stack trace:
+[06-Nov-2017 08:30:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0
+[06-Nov-2017 08:30:42 UTC] PHP Warning:  Illegal string offset 'brandId' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 115
+[06-Nov-2017 08:30:42 UTC] PHP Stack trace:
+[06-Nov-2017 08:30:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:0

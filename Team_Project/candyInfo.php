@@ -21,14 +21,22 @@ function getCandyNames()
 {
     global $conn;
     
-    $sql= "SELECT brandName FROM `candy` c
-            JOIN brand b
-            WHERE c.brandId=b.brandId";
+    $sql= "SELECT brandName FROM `candy` c 
+    JOIN brand b
+    WHERE c.brandId=b.brandId";
+    //AND c.brandId = " . $_GET['brandId'];
+    
     $statement = $conn->prepare($sql);
     $statement->execute();
-    $bName = $statement->fetch(PDO::FETCH_ASSOC);
+    $dName = $statement->fetch(PDO::FETCH_ASSOC);
     
-      return $bName;
+    foreach($dName as $so)
+    {
+     return $so;
+    }
+       
+    
+      //return $bName;
     
     
 }
@@ -85,7 +93,7 @@ function getAllergyName()
         <?php
         
         $candy = displayCandy();
-        $bName = getCandyNames();
+        $dName = getCandyNames();
         
         echo "Candy Information:";
         echo "<br />";
@@ -95,9 +103,9 @@ function getAllergyName()
         echo "<br />";
         echo "Type: " . ucfirst($candy['candyType']);
         echo "<br />";
-        echo "Brand: " . $candy['brandName'];
+        echo "Brand: " . $dName;
         echo "<br />";
-        echo "Allergies: " . getAllergyName();
+       // echo "Allergies: " . getAllergyName();
         echo "<br />";
         
         ?>
