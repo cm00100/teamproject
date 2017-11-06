@@ -10,12 +10,17 @@ function displayCandy() {
     global $conn;
     $sql = "SELECT * 
             FROM candy
-            WHERE candyId = " . $_GET['candyId'];
+            WHERE candyId = " . $_GET['candyId'] ; 
+    
     $statement = $conn->prepare($sql);
     $statement->execute();
     $candy = $statement->fetch(PDO::FETCH_ASSOC);
     return $candy;
 }
+
+
+
+/*
 
 function getCandyNames()
 {
@@ -39,7 +44,7 @@ function getCandyNames()
       //return $bName;
     
     
-}
+}*/
 
 function getAllergyName()
 {
@@ -91,9 +96,9 @@ function getAllergyName()
         <br /><br />
         
         <?php
-        
+       
         $candy = displayCandy();
-        $dName = getCandyNames();
+       // $dName = getCandyNames();
         
         echo "Candy Information:";
         echo "<br />";
@@ -103,10 +108,31 @@ function getAllergyName()
         echo "<br />";
         echo "Type: " . ucfirst($candy['candyType']);
         echo "<br />";
-        echo "Brand: " . $dName;
+        echo "Brand: " ;
+     
+        // This is where Brand Name of Candy is located.
+        
+        $bName = $candy['brandId'];
+        $sql = "SELECT brandName FROM brand WHERE brand_Id = '$bName'";
+        $stmt = $conn->query($sql);	
+        $brandResults = $stmt->fetchAll();
+        foreach ($brandResults as $brand) 
+        {
+        	echo $brand['brandName']   . "<br />";
+        }	 
+
+        
+      
+       
+        
+        
+        
+       // echo "Brand: " . $dName;
         echo "<br />";
        // echo "Allergies: " . getAllergyName();
         echo "<br />";
+        
+        
         
         ?>
         </div>
