@@ -28,6 +28,8 @@ function displayCandy() {
 
         <style>
             @import url("css/styles.css");
+            
+            
     
         </style>
         
@@ -45,9 +47,9 @@ function displayCandy() {
         </script>
         <meta charset="utf-8"/>
     </head>
-    
-    <body>
-
+    <body >
+        
+        
         <h1> Candy Shop </h1>
         
         <form style='display:inline'>

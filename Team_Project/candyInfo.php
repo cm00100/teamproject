@@ -17,6 +17,42 @@ function displayCandy() {
     return $candy;
 }
 
+function getCandyNames()
+{
+    global $conn;
+    
+    $sql= "SELECT brandName FROM `candy` c
+            JOIN brand b
+            WHERE c.brandId=b.brandId";
+    $statement = $conn->prepare($sql);
+    $statement->execute();
+    $bName = $statement->fetch(PDO::FETCH_ASSOC);
+    
+      return $bName;
+    
+    
+}
+
+function getAllergyName()
+{
+    global $conn;
+    
+    $sql= "SELECT allergyDesc FROM `candy` c
+            JOIN allergies a
+            WHERE c.allergyId=a.allergyId
+            AND c.allergyId IS NOT NULL";
+            
+    
+    $statement = $conn->prepare($sql);
+    $statement->execute();
+    $bName = $statement->fetch(PDO::FETCH_ASSOC);
+    
+    foreach($bName as $idk)
+    {
+        return ucfirst($idk);
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -49,18 +85,19 @@ function displayCandy() {
         <?php
         
         $candy = displayCandy();
-            
+        $bName = getCandyNames();
+        
         echo "Candy Information:";
         echo "<br />";
-        echo "Id: " . $candy['candyId'];
+        echo "Id: " . ucfirst($candy['candyId']);
         echo "<br />";
-        echo "Name: " . $candy['candyName'];
+        echo "Name: " . ucfirst($candy['candyName']);
         echo "<br />";
-        echo "Type: " . $candy['candyType'];
+        echo "Type: " . ucfirst($candy['candyType']);
         echo "<br />";
-        echo "Brand: " . $candy['brandId'];
+        echo "Brand: " . $candy['brandName'];
         echo "<br />";
-        echo "Allergies: " . $candy['allergyId'];
+        echo "Allergies: " . getAllergyName();
         echo "<br />";
         
         ?>
