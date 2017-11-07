@@ -43,14 +43,15 @@ $conn = getDatabaseConnection();
       echo "<div id='cartBox'>";
             
             echo"<h2>Current item(s) in cart: </h2><br>";
-        
+            echo "<hr>";
            $displaycart = $_SESSION['cart'];
        
     
            for($i = 0 ; $i < count($displaycart) ; $i++) 
            {
                 echo $displaycart[$i] ;
-                echo '<br></br>';
+                echo '<br>';
+                echo "<hr>";
            }
  
             
