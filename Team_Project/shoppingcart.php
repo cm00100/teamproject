@@ -12,16 +12,14 @@ $conn = getDatabaseConnection();
 
 <!DOCTYPE html>
 <html>
-    <div id="checkoutPage">
+    <div id="checkPage">
     <head>
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link href="css/styles.css" media="all" rel="stylesheet" type="text/css"/>
 
         <title> Shopping Cart </title>
-        <style>
-            @import url("css/styles.css");
-    
-        </style>
+        
         
     </head>
     
@@ -44,15 +42,37 @@ $conn = getDatabaseConnection();
 
      
         
+
+      echo "<div id='cartBox'>";
+
         
         
        echo "Current item(s) in cart: .<br>";
         
    
-         echo '<pre>';
-    print_r($_SESSION);
-    echo '</pre>';
-      
+         
+           $displaycart = $_SESSION['cart'];
+       
+    
+           for($i = 0 ; $i < count($displaycart) ; $i++) 
+           {
+                echo $displaycart[$i] . " ";
+                echo '<br></br>';
+           }
+ 
+    
+
+            echo" <form method='POST' action=''>
+                <input type='submit' name='button'  value='Clear Shopping Cart'>
+                </form>";
+           if (isset($_POST['button'])) 
+            { 
+               session_destroy(); 
+            } 
+            
+          echo "</div>";
+
+
         
      //session_destroy();
  
