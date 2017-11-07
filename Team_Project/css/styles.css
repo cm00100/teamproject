@@ -2,7 +2,32 @@
 {
     text-align: center;
 }
-#backImg
+
+#infoBody
 {
-    width:100%;
+     background-color: blue;
+}
+#wholePage
+{
+    
+    border-radius: 25px;
+    border: 2px solid white;
+    padding-top: 20px; 
+    width:300px;
+    height: 400px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    
+}
+#mainPage
+{
+     border-radius: 25px;
+    border: 2px solid white;
+    padding-top: 20px; 
+    width:400px;
+    height: 1100px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
 }

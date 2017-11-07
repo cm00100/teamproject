@@ -46,14 +46,9 @@ function displayCandy() {
         
         <meta charset="utf-8"/>
     </head>
-    <body >
-        
-        
+    <body background="mainImg2.jpg">
     
-    <body>
-    
-
-
+        <div id="mainPage">
         <h1> Candy Shop </h1>
         
         <form style='display:inline'>
@@ -99,6 +94,7 @@ function displayCandy() {
         
         }
         ?>
+        </div>
         </div> 
     </body>   
     
