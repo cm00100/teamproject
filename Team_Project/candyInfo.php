@@ -119,7 +119,9 @@ function getAllergyName()
         foreach ($brandResults as $brand) 
         {
         	echo $brand['brandName']   . "<br />";
-        }	 
+        }
+        
+        
 
         
       

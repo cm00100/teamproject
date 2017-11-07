@@ -39,19 +39,23 @@ $conn = getDatabaseConnection();
         
         <?php
         
+        
+ 
+
      
         
         
         
-        echo "Current item(s) in cart: " . $_SESSION["candyname"] . ".<br>";
+       echo "Current item(s) in cart: .<br>";
         
-       // print_r($_SESSION);
+   
+         echo '<pre>';
+    print_r($_SESSION);
+    echo '</pre>';
+      
         
-        $cartArray = array();
-        
-       // $cartArray[] = $_SESSION["candyname"];
-        
-       // echo '<pre>'; print_r($cartArray); echo '</pre>';
+     //session_destroy();
+ 
 
 
         
