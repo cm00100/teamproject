@@ -71,95 +71,84 @@ function getAllergyName()
 <!DOCTYPE html>
 <html>
     <div id="infoPage">
-    
     <head>
+        
+
+        <title> Candy Info </title>
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-        <title> Candy Info </title>
         <style>
-            @import url("css/styles.css");
+            @import url("css/style.css");
     
         </style>
         
+          <div id="title">
+              Candy Shop 
+        </div>  
+        
     </head>
     
-    <body background="newBack.jpg">
-<div id="wholePage">
-        <h1> Candy Shop </h1>
+    <body background="mainImg2.jpg">
         
-         
+       
         
         <br /><br />
-      
+        
+        <div id='infoBox'>
+        
         <?php
-       
-        //echo "<div id='wholePage'>";
        
         $candy = displayCandy();
        // $dName = getCandyNames();
         
-        echo "Candy Information";
+        echo" <h2>Candy Information: </h2>";
+        echo "<br>";
+        echo "Candy Name: " . ucfirst($candy['candyName']);
         echo "<br />";
-        echo "Name: " . ucfirst($candy['candyName']);
-        echo "<br />";
-        echo "Calories: " . ucfirst($candy['caloriesId']);
+        echo "ID/SKU: " . ucfirst($candy['candyId']);
         echo "<br />";
         echo "Type: " . ucfirst($candy['candyType']);
         echo "<br />";
         echo "Brand: " ;
+     
         // This is where Brand Name of Candy is located.
         
         $bName = $candy['brandId'];
-        $sql = "SELECT brandName FROM brand WHERE brandId = '$bName'";
+        $sql = "SELECT brandName FROM brand WHERE brand_Id = '$bName'";
         $stmt = $conn->query($sql);	
         $brandResults = $stmt->fetchAll();
         foreach ($brandResults as $brand) 
         {
-<<<<<<< HEAD
-        	echo ucfirst($brand['brandName'])   . "<br />";
-        }	 
-=======
         	echo $brand['brandName']   . "<br />";
         }
         
         
 
->>>>>>> 07c5ad9d4d4337b2ce5e3cbb78caeac7368e658d
         
-        //echo "Brand: " . $dName;
-       // echo "<br />";
-        
-        echo "Allergies: ";
-        $aName = $candy['allergyId'];
-        $sql = "SELECT allergyDesc FROM allergies WHERE allergyId = '$aName'";
-        $stmt = $conn->query($sql);	
-        $allergyName = $stmt->fetchAll();
-        foreach ($allergyName as $allergies) 
-        {
-        	echo ucfirst($allergies['allergyDesc'])   . "<br />";
-        } 
-        
-    //  echo "</div>";
+      
+       
         
         
         
+       // echo "Brand: " . $dName;
+        echo "<br />";
        // echo "Allergies: " . getAllergyName();
-       // echo "<br />";
+        echo "<br />";
         
         
         
         ?>
-        </br>
-      <form action="index.php">
+        
+        </div>
+        
+        <br></br>
+        
+        <form action="index.php">
             
             <input type="submit" value="Back" />
             
         </form>
         </div>
-        </div>    
-        </div>
-        
-         
     </body>     
 </html>

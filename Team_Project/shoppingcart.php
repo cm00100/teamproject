@@ -12,7 +12,8 @@ $conn = getDatabaseConnection();
 
 <!DOCTYPE html>
 <html>
-    <div id="checkPage">
+
+    
     <head>
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -20,65 +21,63 @@ $conn = getDatabaseConnection();
 
         <title> Shopping Cart </title>
         
-        
+      <div id="title">
+              Candy Shop 
+        </div>  
     </head>
     
-    <body>
+    <body background="mainImg2.jpg">
 
-        <h1> Candy Shop </h1>
-        
-          <form action="index.php">
-            
-            <input type="submit" value="Back" />
-            
-        </form>
-        
+
         <br /><br />
+        
+        
+        <div id="checkoutPage">
+        
+        
         
         <?php
         
         
- 
-
-     
-        
 
       echo "<div id='cartBox'>";
-
+            
+            echo"<h2>Current item(s) in cart: </h2><br>";
         
-        
-       echo "Current item(s) in cart: .<br>";
-        
-   
-         
            $displaycart = $_SESSION['cart'];
        
     
            for($i = 0 ; $i < count($displaycart) ; $i++) 
            {
-                echo $displaycart[$i] . " ";
+                echo $displaycart[$i] ;
                 echo '<br></br>';
            }
  
-    
-
-            echo" <form method='POST' action=''>
-                <input type='submit' name='button'  value='Clear Shopping Cart'>
+            
+         echo "</div>";
+         
+        
+       
+       
+         echo "<div id='shoppingButtons'>";
+         echo "<form action='index.php' style='display:inline'>
+                    <input type='submit' value='Back' />
+                </form>
+         
+                <form method='POST' action='' style='display:inline'>
+                    <input type='submit' name='clearButton'  value='Clear Shopping Cart'>
                 </form>";
-           if (isset($_POST['button'])) 
+        
+         if (isset($_POST['clearButton'])) 
             { 
                session_destroy(); 
             } 
-            
-          echo "</div>";
-
-
-        
-     //session_destroy();
- 
-
-
-        
+      
+        echo "</div>";
         ?>
+         </div>
+      
+        
+        
     </body>     
 </html>

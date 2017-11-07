@@ -45,13 +45,15 @@ function displayCandy() {
         </script>
         
         <meta charset="utf-8"/>
+        <div id="title">
+                Candy Shop 
+        </div>
+        
     </head>
     <body background="mainImg2.jpg">
     
-        <div id="mainPage">
-        <h1> Candy Shop </h1>
-        
-        <form style='display:inline'>
+        <br>
+         <form style='display:inline'>
             
             <input type="submit" value="Select Type" />
             
@@ -69,26 +71,41 @@ function displayCandy() {
             
         </form>
         
+        <br></br>
+    
+        <div id="mainPage">
+       
+        
+       
+        
         <br /><br />
         
-        <p> <a href="shoppingcart.php">View Shopping Cart</a></p>
-
+        <p>
+        <a href="shoppingcart.php">
+          <img src="viewcart.png" alt="View Shopping Cart" style="height: 120px">
+        </a>
+        </p>
+        
+         <br />
         
         <?php
         
         $candies = displayCandy();
         
         foreach($candies as $candy) {
-            echo $candy['candyName'];
-            echo "<a href='candyInfo.php?candyId=".$candy['candyId']."'> [info] </a> ";
             
-
+            $candyname = $candy['candyName'];
+            echo $candyname;
+            
+            echo "<a href='candyInfo.php?candyId=".$candy['candyId']."'> [More Info] </a> ";
+     
+                    
             echo "<form action='addtocart.php' style='display:inline' onsubmit='return confirmAddToCart(\"".$candy['candyName']."\")'>
                      <input type='hidden' name='candyId' value='".$candy['candyId']."' />
                      <input type='submit' value='Add To Cart'>
                   </form>";
             
-            echo "<br />";
+            echo "<br><br />";
             
         
         
@@ -96,6 +113,9 @@ function displayCandy() {
         ?>
         </div>
         </div> 
+        
+        
+     
     </body>   
     
 </html>
