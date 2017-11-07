@@ -17,64 +17,16 @@ function displayCandy() {
     return $candy;
 }
 
-?>
-
-<!DOCTYPE html>
-<html>
-    <div id="checkoutPage">
-    <head>
-        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
-        <title> Adding To Cart </title>
-        <style>
-            @import url("css/styles.css");
+    $candy = displayCandy();
     
-        </style>
-        
-    </head>
+    $candyname = $candy['candyName'];
     
-    <body>
+    
+    $_SESSION['cart'][] = $candyname;
 
-        <h1> Candy Shop </h1>
-        <h2> Adding To Cart... </h2>
-        
-        <br /><br />
-        
-        <?php
-        
-        $candy = displayCandy();
-        
-        
        
-            
-        echo "Candy Information:";
-        echo "<br />";
-        echo "Id: " . $candy['candyId'];
-        echo "<br />";
-        echo "Name: " . $candy['candyName'];
-         $_SESSION["candyname"] = $candy['candyName'];
-        echo "<br />";
-        echo "Type: " . $candy['candyType'];
-        echo "<br />";
-        echo "Brand: " . $candy['brandId'];
-        echo "<br />";
-        echo "Allergies: " . $candy['allergyId'];
-        echo "<br />";
+    header("Location: index.php");
         
         
-        
-        ?>
-        
-         <br /><br />
 
-        
-          <form action="index.php">
-            
-            <input type="submit" value="Back" />
-            
-        </form>
-        
-        </div>
-    </body>     
-</html>
+?>

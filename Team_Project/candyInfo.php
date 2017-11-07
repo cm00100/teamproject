@@ -116,8 +116,16 @@ function getAllergyName()
         $brandResults = $stmt->fetchAll();
         foreach ($brandResults as $brand) 
         {
+<<<<<<< HEAD
         	echo ucfirst($brand['brandName'])   . "<br />";
         }	 
+=======
+        	echo $brand['brandName']   . "<br />";
+        }
+        
+        
+
+>>>>>>> 07c5ad9d4d4337b2ce5e3cbb78caeac7368e658d
         
         //echo "Brand: " . $dName;
        // echo "<br />";
