@@ -52,9 +52,13 @@ function orderType($count2) {
         WHERE candyType = 'chocolate'
         ORDER BY candyName ASC";
     }
+    elseif($count2 == 4) {
+        $sql = "SELECT * FROM candy
+        WHERE candyType = 'spicy'
+        ORDER BY candyName ASC";
+    }
     else {
         $sql = "SELECT * FROM candy 
-        WHERE candyType = 'spicy'
         ORDER BY candyName ASC";
     }
 
@@ -76,6 +80,7 @@ function displayCandy() {
     $candies = $statement->fetchAll(PDO::FETCH_ASSOC);
     return $candies;
 }
+
 
 
 ?>
@@ -119,62 +124,6 @@ function displayCandy() {
         <div id="mainPage">
        
         <br>
-        <form action='index.php' style='display:inline' method="get">
-            
-            <input type="submit" name="candyType" value="Candy Type" />
-            
-            <br />
-            
-            <input type="radio" id="sweet" name="type" value="1">
-            <label for="sweet">Sweet</label>
-            <input type="radio" id="sour" name="type" value="2">
-            <label for="sour">Sour</label>
-            <input type="radio" id="chocolate" name="type" value="3">
-            <label for="chocolate">Chocolate</label>
-            <input type="radio" id="spicy" name="type" value="4">
-            <label for="Spicy">Spicy</label>
-            
-        </form>
-        
-        <br/> 
-        
-        <form action='index.php' style='display:inline' method="get">
-            
-            <input type="submit" name="cal" value="Order by Calories" /> 
-            
-            <br />
-            
-            <input type="radio" id="ascending" name="ordering" value="1">
-            <label for="ascending">Ascending</label>
-            <input type="radio" id="descending" name="ordering" value="2">
-            <label for="descending">Descending</label>
-                
-            <br />
-            
-        </form>
-        
-        <form action='index.php' style='display:inline' method="get">
-                
-            <input type="submit" name="price" value="Order by Price" />
-            
-            <br />
-            
-            
-            <input type="radio" id="ascending" name="ordering" value="1">
-            <label for="ascending">Ascending</label>
-            
-            <input type="radio" id="descending" name="ordering" value="2">
-            <label for="descending">Descending</label>
-            
-        </form>
-        
-
-        <form action='index.php' method="get">
-            
-        </form>
-       
-        
-        <br />
         
         <p>
         <a href="shoppingcart.php">
@@ -183,6 +132,68 @@ function displayCandy() {
         </p>
         
          <br />
+         
+        <form action='index.php' style='display:inline' method="get">
+            
+            <input type="submit" name="candyType" value="Show Only" />
+            
+            
+            
+            <input type="radio" id="sweet" name="type" value="1">
+            <label for="sweet">Sweet</label>
+            <input type="radio" id="sour" name="type" value="2">
+            <label for="sour">Sour</label>
+            <input type="radio" id="chocolate" name="type" value="3">
+            <label for="chocolate">Chocolate</label>
+            <input type="radio" id="spicy" name="type" value="4">
+            <label for="spicy">Spicy</label>
+            
+        </form>
+        
+        <br />
+        <br />
+        
+        <form action='index.php' style='display:inline' method="get">
+            
+            <input type="submit" name="cal" value="Order by Calories" /> 
+            
+            
+            
+            <input type="radio" id="ascending" name="ordering" value="1">
+            <label for="ascending">Ascending</label>
+            <input type="radio" id="descending" name="ordering" value="2">
+            <label for="descending">Descending</label>
+                
+            
+        </form>
+        
+        <br />
+        <br />
+        
+        <form action='index.php' style='display:inline' method="get">
+                
+            <input type="submit" name="price" value="Order by Price" />
+            
+            
+            
+            
+            <input type="radio" id="ascending1" name="ordering" value="1">
+            <label for="ascending1">Ascending</label>
+            
+            <input type="radio" id="descending1" name="ordering" value="2">
+            <label for="descending1">Descending</label>
+            
+        </form>
+        
+        <br />
+        
+
+        <form action='index.php' method="get">
+            
+        </form>
+       
+        
+        <br />
       
         <!-- 
          <form style='display:inline'>
@@ -247,15 +258,16 @@ function displayCandy() {
         foreach($candies as $candy) {
             
             $candyname = $candy['candyName'];
-            echo $candyname;
+            //echo $candyname;
             
-            echo "<a href='candyInfo.php?candyId=".$candy['candyId']."'> [More Info] </a> ";
-    
+            echo "<strong><a href='candyInfo.php?candyId=".$candy['candyId']."'> $candyname </a></strong>";
+            echo "Cal: ".$candy['caloriesId'];
                     
-            echo "<form action='addtocart.php' style='display:inline' onsubmit='return confirmAddToCart(\"".$candy['candyName']."\")'>
+            echo "<form action='addtocart.php' style='display:inline' onsubmit='return confirmAddToCart(\"".$candy['candyId']."\")'>
                      <input type='hidden' name='candyId' value='".$candy['candyId']."' />
                      <input type='submit' value='Add To Cart'>
                   </form>";
+            echo "$".$candy['priceId'];
             
             echo "<br>";
             echo"<hr>";
