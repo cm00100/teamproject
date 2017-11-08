@@ -106,7 +106,7 @@ function getAllergyName()
         echo "<br>";
         echo "Candy Name: " . ucfirst($candy['candyName']);
         echo "<br />";
-        echo "ID/SKU: " . ucfirst($candy['candyId']);
+        echo "Calories: " . ucfirst($candy['caloriesId']);
         echo "<br />";
         echo "Type: " . ucfirst($candy['candyType']);
         echo "<br />";
