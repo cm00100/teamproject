@@ -89,7 +89,7 @@ function getAllergyName()
         
     </head>
     
-    <body background="mainImg2.jpg">
+    <body  background="newBack.jpg">>
         
        
         
@@ -115,26 +115,26 @@ function getAllergyName()
         // This is where Brand Name of Candy is located.
         
         $bName = $candy['brandId'];
-        $sql = "SELECT brandName FROM brand WHERE brand_Id = '$bName'";
+        $sql = "SELECT brandName FROM brand WHERE brandId = '$bName'";
         $stmt = $conn->query($sql);	
         $brandResults = $stmt->fetchAll();
         foreach ($brandResults as $brand) 
         {
-        	echo $brand['brandName']   . "<br />";
+        	echo ucfirst($brand['brandName'])   . "<br />";
+
         }
         
         
-
-        
+      echo "Allergies: ";
+      $aName = $candy['allergyId'];
+      $sql = "SELECT allergyDesc FROM allergies WHERE allergyId = '$aName'";
+      $stmt = $conn->query($sql);	
+      $allergyName = $stmt->fetchAll();
       
-       
-        
-        
-        
-       // echo "Brand: " . $dName;
-        echo "<br />";
-       // echo "Allergies: " . getAllergyName();
-        echo "<br />";
+       foreach ($allergyName as $allergies) 
+       {
+      	echo ucfirst($allergies['allergyDesc'])   . "<br />";
+       } 
         
         
         
