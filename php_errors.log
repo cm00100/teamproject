@@ -426,3 +426,15 @@ Stack trace:
 #1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(100): displayCandy()
 #2 {main}
   thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 16
+[08-Nov-2017 01:21:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(16): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(102): displayCandy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 16
+[08-Nov-2017 01:21:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(16): PDOStatement->execute()
+#1 /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php(102): displayCandy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/teamproject/Team_Project/candyInfo.php on line 16

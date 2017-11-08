@@ -89,7 +89,7 @@ function getAllergyName()
         
     </head>
     
-    <body  background="newBack.jpg">>
+    <body  background="mainImg2.jpg">
         
        
         
